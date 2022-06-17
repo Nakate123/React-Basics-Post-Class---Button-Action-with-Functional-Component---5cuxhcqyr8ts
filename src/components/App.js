@@ -2,14 +2,18 @@ import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
+  const Action = () => {
+    return (
+      <p>
+        "Hello, I've learnt to use the full-stack evaluation tool. This makes me
+        so happy"
+      </p>
+    );
+  };
+
   return (
     <div id="main">
-      <button id="click" onClick="para">
-        <p id="para">
-          Hello, I've learnt to use the full-stack evaluation tool. This makes
-          me so happy
-        </p>
-      </button>
+      <button onClick={Action}></button>
     </div>
   );
 }
